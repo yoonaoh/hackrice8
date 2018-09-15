@@ -1,0 +1,12 @@
+#space {
+  display: flex;
+  justify-content: space-between;
+}
+html, body, div {
+  font-family: monospace;
+  font-size: 12pt;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+
+}
