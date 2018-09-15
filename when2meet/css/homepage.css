@@ -1,6 +1,4 @@
-#about {
-  text-align: right;
-}
-html {
-  color: red;
+#space {
+  display: flex;
+  justify-content: space-between;
 }
