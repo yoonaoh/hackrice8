@@ -1,12 +1,12 @@
+application: when2meet-hackrice
+version: 1
 runtime: python27
 api_version: 1
-threadsafe: true
+threadsafe: yes
 
 handlers:
 - url: /css
   static_dir: css
-- url: /html
-  static_dir: html
 - url: /.*
   script: main.app
 

@@ -22,9 +22,9 @@ from google.appengine.ext import ndb
 
 env = jinja2.Environment(loader=jinja2.FileSystemLoader('html'));
 
-class Home(webapp2.RequestHandler):
+class HomePage(webapp2.RequestHandler):
     def get(self):
-        template = env.get_template('home.html')
+        template = env.get_template('homepage.html')
         self.response.write(template.render())
 
 class Dashboard(webapp2.RequestHandler):
@@ -44,7 +44,7 @@ class Availability(webapp2.RequestHandler):
 
 
 app = webapp2.WSGIApplication([
-    ('/', Home),
+    ('/', HomePage),
     ('/dashboard', Dashboard),
     ('/new_event', NewEvent),
     ('availability', Availability)
