@@ -7,13 +7,81 @@
 <header>
   <div style="background-color: black; color: white; padding: 20px;">
     <div id="space">
-      <span>Home</span>
+      <span>Create New Event</span>
       <span>Sign Out About</span>
     </div>
       <!-- <p align="left";> Homepage <p align="right";> About </p></p> -->
   </div>
 </header>
 <body>
-  <h1> Create a ne event. </h1>
+  <h1> Create a New Event </h1>
+  <input style='font-size:20px; text-align: center;' type=text name="NewEventName" value="New Event Name" >
+  <p style="font-size: 19px"> What dates might work? </p>
+  <p> Click and drag to choose days.</p>
+
+  <br>
+  <p style="font-size: 19px"> What times might work? </p>
+
+  <p> No earlier than: <select name="NoEarlierThan">
+  <option value=0>Midnight</option>
+  <option value=1>1 am</option>
+  <option value=2>2 am</option>
+  <option value=3>3 am</option>
+  <option value=4>4 am</option>
+  <option value=5>5 am</option>
+  <option value=6>6 am</option>
+  <option value=7>7 am</option>
+  <option value=8>8 am</option>
+  <option selected value=9>9 am</option>
+  <option value=10>10 am</option>
+  <option value=11>11 am</option>
+  <option value=12>Noon</option>
+  <option value=13>1 pm</option>
+  <option value=14>2 pm</option>
+  <option value=15>3 pm</option>
+  <option value=16>4 pm</option>
+  <option value=17>5 pm</option>
+  <option value=18>6 pm</option>
+  <option value=19>7 pm</option>
+  <option value=20>8 pm</option>
+  <option value=21>9 pm</option>
+  <option value=22>10 pm</option>
+  <option value=23>11 pm</option>
+  <option value=0>Midnight</option></select></div></p>
+
+  <p> No later than: <select name="NoLaterThan">
+  <option value=0> Midnight</option>
+  <option value=1>1 am</option>
+  <option value=2>2 am</option>
+  <option value=3>3 am</option>
+  <option value=4>4 am</option>
+  <option value=5>5 am</option>
+  <option value=6>6 am</option>
+  <option value=7>7 am</option>
+  <option value=8>8 am</option>
+  <option value=9>9 am</option>
+  <option value=10>10 am</option>
+  <option value=11>11 am</option>
+  <option value=12>Noon</option>
+  <option value=13>1 pm</option>
+  <option value=14>2 pm</option>
+  <option value=15>3 pm</option>
+  <option value=16>4 pm</option>
+  <option selected value=17>5 pm</option>
+  <option value=18>6 pm</option>
+  <option value=19>7 pm</option>
+  <option value=20>8 pm</option>
+  <option value=21>9 pm</option>
+  <option value=22>10 pm</option>
+  <option value=23>11 pm</option>
+  <option value=0>Midnight</option>
+</select></div></p>
+  <p> Timezone: <select name="Timezones">
+    <option value=0>Eastern Time</option>
+    <option selected value=1> Central Time</option>
+    <option value=2> Mountain Time </option>
+    <option value=3> Pacific Time </option>
+  </select></p>
+  <button> Create Event </button>
 </body>
 </html>
