@@ -1,12 +1,18 @@
-#space {
-  display: flex;
-  justify-content: space-between;
-}
 html, body, div {
   font-family: monospace;
   font-size: 12pt;
   margin-top: 0;
   margin-left: 0;
   margin-right: 0;
+}
 
+#space {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  font-family: 'Source Serif Pro', serif;
+  color: black;
+  text-align: center;
 }
