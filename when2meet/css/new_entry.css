@@ -3,13 +3,7 @@
   justify-content: space-between;
 }
 
-footer{
-  background:#1A936F;
-  position:absolute;
-  bottom:0;
-  width:100%;
-  height:20px;
-}
+
 
 html, body, div {
   font-family: 'Karla', sans-serif;
@@ -69,7 +63,7 @@ body {font-family: 'Karla', sans-serif;}
 
 .month {
     padding: 50px 25px;
-    width: 70%;
+    width: 60%;
     margin: auto;
     background: #1A936F;
     text-align: center;
@@ -98,7 +92,7 @@ body {font-family: 'Karla', sans-serif;}
 }
 
 .weekdays {
-    width: 70%;
+    width: 60%;
     margin: auto;
     padding: 10px 0;
     background-color: #ddd;
@@ -112,7 +106,7 @@ body {font-family: 'Karla', sans-serif;}
 }
 
 .days {
-    width: 70%;
+    width: 60%;
     margin: auto;
     padding: 10px 0;
     background: #eee;
