@@ -1,36 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title> When2Meet </title>
+  <title> Dashboard </title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
   <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
   <link rel="stylesheet" href="../css/dashboard.css">
 </head
 <header>
   <div style="background-color: #1A936F; color: white; padding: 20px;">
     <div id="space">
-      <span>Dashboard</span>
-      <span>Sign Out &nbsp; &nbsp; About</span>
+      <span><b>Dashboard</b></span>
+      <span><u>Sign Out </u>&nbsp; &nbsp; <u>About</u></span>
+      <!-- <p align="left";> Homepage <p align="right";> About </p></p> -->
     </div>
   </div>
 </header>
 <body>
-  <h1 style="padding: 20px"> Dashboard </h1>
+  <br>
   <br>
   <div class="wrap">
   <a href = "new_event.html"> <button class="btn">Create a New Event</button></a>
   </div>
   <br>
   <br>
-  <div class="wrap">
+  <div class="wrap" style="padding: 20px">
   <table>
+    <thead>
+      <tr>
+        <th colspan="2"><b>Your When2Meets<b></th>
+      </tr>
     <tr>
-      <th>Event Name </th>
-      <th>Event Dates </th>
+      <th><b>Event Name</b></th>
+      <th><b>Event Dates</b></th>
+    </tr>
+  </thead>
+    <tbody>
+    <tr>
+      <td>CS Club Github Workshop</td>
+      <td> September 5, 2018 - September 15, 2018</td>
     </tr>
     <tr>
-      <th> <a href="#";>CS club</a></th>
-      <th> Sep 5-Sep 15</th>
+      <td>Rice Pre-Med Society - Exec Meeting</td>
+      <td> October 12, 2018 - October 18, 2018</td>
     </tr>
+    <tr>
+      <td>Coffee House Hiring Interview</td>
+      <td> January 3, 2018 - January 6, 2018</td>
+    </tr>
+    <tr>
+      <td>Spring Hackathon</td>
+      <td> March 21, 2019 - April 9, 2018</td>
+    </tr>
+  </tbody>
   </table>
   </div>
 </body>
