@@ -40,10 +40,32 @@ html, body, div {
   transform: translateY(-3px);
 }
 
+
+thead tr:first-child {
+  background: #1A936F;
+  color: white;
+  border: none;
+  padding: 0 15px 0 20px;
+}
+
+th:first-child,
+td:first-child {
+  padding: 10px 15px 10px 20px;
+}
+
+th {
+  font-weight: 500;
+}
+
+thead tr:last-child th {
+  border-bottom: 3px solid #ddd;
+}
+
 table {
   border-collapse: collapse;
-  width: 95%;
-
+  width: 60%;
+  border: 2px solid #1A936F;
+  border-radius: .25re
 }
 td, th {
   border: 1px solid;
@@ -52,4 +74,8 @@ td, th {
 }
 tr: nth-child(even) {
   bacground-color: lightgreen;
+}
+tbody tr:hover {
+  background-color: #f2f2f2;
+  cursor: default;
 }
