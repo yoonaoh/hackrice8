@@ -10,6 +10,27 @@ html, body, div {
   margin-right: 0;
   text-align: center;
 }
+.daybtn {
+  height: 20px;
+  font-family: 'Karla', sans-serif;
+  font-size: 12px;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #777;
+  background-color: #eee;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  }
+  
+.daybtn :active{
+  padding: 5px;
+  background: #1A936F;
+  color: white !important
+}
 .btn {
   width: 210px;
   height: 45px;
@@ -28,7 +49,7 @@ html, body, div {
   }
 * {box-sizing: border-box;}
 ul {list-style-type: none;}
-body {font-family: monospace, monospace;}
+body {font-family: 'Karla', sans-serif;}
 
 .month {
     padding: 70px 25px;
