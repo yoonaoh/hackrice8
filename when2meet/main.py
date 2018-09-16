@@ -37,9 +37,14 @@ class NewEvent(webapp2.RequestHandler):
         template = env.get_template('new_event.html')
         self.response.write(template.render())
 
-class Availability(webapp2.RequestHandler):
+class PersonalAvailability(webapp2.RequestHandler):
     def get(self):
-        template = env.get_template('availability.html')
+        template = env.get_template('personal_availability.html')
+        self.response.write(template.render())
+
+class GroupAvailability(webapp2.RequestHandler):
+    def get(self):
+        template = env.get_template('group_availability.html')
         self.response.write(template.render())
 
 
@@ -47,5 +52,6 @@ app = webapp2.WSGIApplication([
     ('/', HomePage),
     ('/dashboard', Dashboard),
     ('/new_event', NewEvent),
-    ('availability', Availability)
+    ('/personal', PersonalAvailability),
+    ('/group', GroupAvailability)
 ], debug=True)
