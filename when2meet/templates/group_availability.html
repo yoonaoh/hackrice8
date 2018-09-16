@@ -4,6 +4,7 @@
   <title> When2Meet </title>
   <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
   <link rel="stylesheet" href="../css/group_availability.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 <header>
   <div style="background-color: #1A936F; color: white; padding: 20px;">
@@ -14,7 +15,10 @@
   </div>
 </header>
 <body>
-  <h1>  </h1>
+  <h1 id="eventhead"></h1>
+  <script>
+      document.getElementById('eventhead').innerHTML= sessionStorage.getItem('eventName');
+  </script>
   <h3> Time Zone </h3>
   <p style="font-size: 17px; color: #595959; text-align: center;"><select name="Timezones" style="border-radius: 5px">
     <option value=0>Eastern Time</option>

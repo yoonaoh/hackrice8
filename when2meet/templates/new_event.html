@@ -5,6 +5,7 @@
   <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
   <link rel="stylesheet" href="../css/new_entry.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.css" integrity="sha256-wT6CFc7EKRuf7uyVfi+MQNHUzojuHN2pSw0YWFt2K5E=" crossorigin="anonymous" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 <header>
   <div style="background-color: #1A936F; color: white; padding: 20px;">
@@ -16,15 +17,8 @@
 </header>
 <body>
   <h1 style="color: #595959;"> Create a New Event </h1>
-  <form method: "get" action="/personal">
+  <form method: "link" action="/personal">
   <input style='font-size:20px; text-align: center; border-radius: 5px; margin:5px;' type=text name="eventName" placeholder="New Event Name">
-<!-- <script>
-  function testJS() {
-    var x = document.getElementById('name').value,
-        url = 'http://path_to_your_html_files/next.html?name=' + encodeURIComponent(x);
-    document.location.href = url;
-}
-</script> -->
   </form>
   <br>
   <br>
@@ -159,9 +153,15 @@
     <option value=2> Mountain Time </option>
     <option value=3> Pacific Time </option>
   </select></p>
-  <form method: "get" action="/personal">
+  <form method: "link" action="/personal">
   <br>
-  <input class="btn" type="submit" value="Create Event">
+  <input class="btn" id="eventName" type="submit" value="Create Event">
+  <script>
+    document.getElementById('eventName').onkeyup = function() {
+      var eventName = this.value;
+      sessionStorage.setItem('eventName', eventName);
+  };
+  </script>
   <br>
   <br>
   <br>

@@ -117,8 +117,9 @@ body {font-family: 'Karla', sans-serif;}
     display: inline-block;
     width: 13.6%;
     text-align: center;
+    margin-top: 5px;
     margin-bottom: 5px;
-    font-size:12px;
+    font-size:14px;
     color: #777;
 }
 
