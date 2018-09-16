@@ -32,6 +32,7 @@ html, body, div {
   background: #1A936F;
   color: white !important
 }
+
 .btn {
   width: 210px;
   height: 45px;
@@ -60,7 +61,7 @@ ul {list-style-type: none;}
 body {font-family: 'Karla', sans-serif;}
 
 .month {
-    padding: 50px 25px;
+    padding: 30px 25px;
     width: 60%;
     margin: auto;
     background: #1A936F;

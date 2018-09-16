@@ -16,8 +16,16 @@
 </header>
 <body>
   <h1 style="color: #595959;"> Create a New Event </h1>
-  <form method: "link" action="/personal">
+  <form method: "get" action="/personal">
   <input style='font-size:20px; text-align: center; border-radius: 5px; margin:5px;' type=text name="eventName" placeholder="New Event Name">
+<!-- <script>
+  function testJS() {
+    var x = document.getElementById('name').value,
+        url = 'http://path_to_your_html_files/next.html?name=' + encodeURIComponent(x);
+    document.location.href = url;
+}
+</script> -->
+  </form>
   <br>
   <br>
   <p style="font-size: 19px; color: #595959;"> What dates might work? </p>
@@ -67,12 +75,12 @@
     <li><button class="daybtn">14</button></li>
     <li><button class="daybtn">15</button></li>
     <li><button class="daybtn"><span class="active">16</span></button></li>
-    <li><button class="daybtn">17</button></li>
-    <li><button class="daybtn">18</button></li>
-    <li><button class="daybtn">19</button></li>
-    <li><button class="daybtn">20</button></li>
-    <li><button class="daybtn">21</button></li>
-    <li><button class="daybtn">22</button></li>
+    <li><button class="daybtn"><span class="active">17</span></button></li>
+    <li><button class="daybtn"><span class="active">18</span></button></li>
+    <li><button class="daybtn"><span class="active">19</span></button></li>
+    <li><button class="daybtn"><span class="active">20</span></button></li>
+    <li><button class="daybtn"><span class="active">21</span></button></li>
+    <li><button class="daybtn"><span class="active">22</span></button></li>
     <li><button class="daybtn">23</button></li>
     <li><button class="daybtn">24</button></li>
     <li><button class="daybtn">25</button></li>
@@ -88,7 +96,8 @@
     <li> </li>
     <li> </li>
   </ul>
-  <br>
+</br>
+</br>
   <p style="font-size: 17px; color: #595959;"> What times might work? </p>
   <p style="font-size: 17px; color: #595959;"> No earlier than: <select name="NoEarlierThan" style="border-radius: 5px">
   <option value=0>Midnight</option>
@@ -150,12 +159,13 @@
     <option value=2> Mountain Time </option>
     <option value=3> Pacific Time </option>
   </select></p>
+  <form method: "get" action="/personal">
   <br>
   <input class="btn" type="submit" value="Create Event">
   <br>
   <br>
   <br>
-</form>
+  </form>
 <!-- <button class="btn">Create Event</button>
 <br>
 <br>
