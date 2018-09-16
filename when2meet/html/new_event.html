@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> When2Meet </title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+  <link rel="stylesheet" href="../css/new_entry.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.css" integrity="sha256-wT6CFc7EKRuf7uyVfi+MQNHUzojuHN2pSw0YWFt2K5E=" crossorigin="anonymous" />
+</head>
+<header>
+  <div style="background-color: #1A936F; color: white; padding: 20px;">
+    <div id="space">
+      <span>Create New Event</span>
+      <span>Sign Out &nbsp; &nbsp; About</span>
+    </div>
+  </div>
+</header>
+<body>
+  <h1> Create a New Event </h1>
+  <input style='font-size:20px; text-align: center; border-radius: 5px; margin:10px;' type=text placeholder="New Event Name">
+  <br>
+  <br>
+  <p style="font-size: 19px"> What dates might work? </p>
+  <p> <i> Click and drag to choose days. </i> </p>
+  <div class="month">
+    <ul>
+      <li class="prev">&#10094;</li>
+      <li class="next">&#10095;</li>
+      <li>
+        September<br>
+        <span style="font-size:18px">2018</span>
+      </li>
+    </ul>
+  </div>
+
+  <ul class="weekdays">
+    <li>Su</li>
+    <li>Mo</li>
+    <li>Tu</li>
+    <li>We</li>
+    <li>Th</li>
+    <li>Fr</li>
+    <li>Sa</li>
+  </ul>
+
+  <ul class="days">
+
+    <li> </li>
+    <li> </li>
+    <li> </li>
+    <li> </li>
+    <li> </li>
+    <li> </li>
+    <li><button class="daybtn">1</button></li>
+    <li><button class="daybtn">2</button></li>
+    <li><button class="daybtn">3</button></li>
+    <li><button class="daybtn">4</button></li>
+    <li><button class="daybtn">5</button></li>
+    <li><button class="daybtn">6</button></li>
+    <li><button class="daybtn">7</button></li>
+    <li><button class="daybtn">8</button></li>
+    <li><button class="daybtn">9</button></li>
+    <li><button class="daybtn">10</button></li>
+    <li><button class="daybtn">11</button></li>
+    <li><button class="daybtn">12</button></li>
+    <li><button class="daybtn">13</button></li>
+    <li><button class="daybtn">14</button></li>
+    <li><button class="daybtn">15</button></li>
+    <li><button class="daybtn"><span class="active">16</span></button></li>
+    <li><button class="daybtn">17</button></li>
+    <li><button class="daybtn">18</button></li>
+    <li><button class="daybtn">19</button></li>
+    <li><button class="daybtn">20</button></li>
+    <li><button class="daybtn">21</button></li>
+    <li><button class="daybtn">22</button></li>
+    <li><button class="daybtn">23</button></li>
+    <li><button class="daybtn">24</button></li>
+    <li><button class="daybtn">25</button></li>
+    <li><button class="daybtn">26</button></li>
+    <li><button class="daybtn">27</button></li>
+    <li><button class="daybtn">28</button></li>
+    <li><button class="daybtn">29</button></li>
+    <li><button class="daybtn">30</button></li>
+    <li> </li>
+    <li> </li>
+    <li> </li>
+    <li> </li>
+    <li> </li>
+    <li> </li>
+  </ul>
+  <br>
+  <p style="font-size: 19px"> What times might work? </p>
+  <form>
+  <p> No earlier than: <select name="NoEarlierThan" style="border-radius: 5px">
+  <option value=0>Midnight</option>
+  <option value=1>1 am</option>
+  <option value=2>2 am</option>
+  <option value=3>3 am</option>
+  <option value=4>4 am</option>
+  <option value=5>5 am</option>
+  <option value=6>6 am</option>
+  <option value=7>7 am</option>
+  <option value=8>8 am</option>
+  <option selected value=9>9 am</option>
+  <option value=10>10 am</option>
+  <option value=11>11 am</option>
+  <option value=12>Noon</option>
+  <option value=13>1 pm</option>
+  <option value=14>2 pm</option>
+  <option value=15>3 pm</option>
+  <option value=16>4 pm</option>
+  <option value=17>5 pm</option>
+  <option value=18>6 pm</option>
+  <option value=19>7 pm</option>
+  <option value=20>8 pm</option>
+  <option value=21>9 pm</option>
+  <option value=22>10 pm</option>
+  <option value=23>11 pm</option>
+  <option value=0>Midnight</option></select></div></p>
+
+  <p> No later than: <select name="NoLaterThan" style="border-radius: 5px">
+  <option value=0> Midnight</option>
+  <option value=1>1 am</option>
+  <option value=2>2 am</option>
+  <option value=3>3 am</option>
+  <option value=4>4 am</option>
+  <option value=5>5 am</option>
+  <option value=6>6 am</option>
+  <option value=7>7 am</option>
+  <option value=8>8 am</option>
+  <option value=9>9 am</option>
+  <option value=10>10 am</option>
+  <option value=11>11 am</option>
+  <option value=12>Noon</option>
+  <option value=13>1 pm</option>
+  <option value=14>2 pm</option>
+  <option value=15>3 pm</option>
+  <option value=16>4 pm</option>
+  <option selected value=17>5 pm</option>
+  <option value=18>6 pm</option>
+  <option value=19>7 pm</option>
+  <option value=20>8 pm</option>
+  <option value=21>9 pm</option>
+  <option value=22>10 pm</option>
+  <option value=23>11 pm</option>
+  <option value=0>Midnight</option>
+</select></div></p>
+  <p> Timezone: <select name="Timezones" style="border-radius: 5px">
+    <option value=0>Eastern Time</option>
+    <option selected value=1> Central Time</option>
+    <option value=2> Mountain Time </option>
+    <option value=3> Pacific Time </option>
+  </select></p>
+  <br>
+</form>
+<button class="btn">Create Event</button>
+<footer></footer>
+</body>
+</html>

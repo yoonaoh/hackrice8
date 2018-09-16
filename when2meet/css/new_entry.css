@@ -2,6 +2,15 @@
   display: flex;
   justify-content: space-between;
 }
+
+footer{
+  background:#1A936F;
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:20px;
+}
+
 html, body, div {
   font-family: 'Karla', sans-serif;
   font-size: 13pt;
@@ -59,8 +68,9 @@ ul {list-style-type: none;}
 body {font-family: 'Karla', sans-serif;}
 
 .month {
-    padding: 70px 25px;
-    width: 100%;
+    padding: 50px 25px;
+    width: 70%;
+    margin: auto;
     background: #1A936F;
     text-align: center;
 }
@@ -88,7 +98,8 @@ body {font-family: 'Karla', sans-serif;}
 }
 
 .weekdays {
-    margin: 0;
+    width: 70%;
+    margin: auto;
     padding: 10px 0;
     background-color: #ddd;
 }
@@ -101,9 +112,10 @@ body {font-family: 'Karla', sans-serif;}
 }
 
 .days {
+    width: 70%;
+    margin: auto;
     padding: 10px 0;
     background: #eee;
-    margin: 0;
 }
 
 .days li {
