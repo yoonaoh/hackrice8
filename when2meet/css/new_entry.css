@@ -39,14 +39,21 @@ html, body, div {
   text-transform: uppercase;
   letter-spacing: 2.5px;
   font-weight: 500;
-  color: white;
+  color: #fff;
   background-color: #1A936F;
   border: none;
   border-radius: 35px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
   transition: all 0.4s ease 0s;
   cursor: pointer;
   }
+
+.btn:hover {
+  background-color: #16795B;
+      box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.6);
+  transform: translateY(-3px);
+}
+
 * {box-sizing: border-box;}
 ul {list-style-type: none;}
 body {font-family: 'Karla', sans-serif;}
