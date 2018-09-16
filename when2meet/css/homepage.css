@@ -8,6 +8,10 @@ body, html, div{
   font-size: 13pt;
 }
 
+h1 {
+  color:  #595959;
+}
+
 .btn {
   width: 110px;
   height: 45px;
