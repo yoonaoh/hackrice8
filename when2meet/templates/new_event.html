@@ -2,6 +2,13 @@
 <html>
 <head>
   <title> When2Meet </title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
   <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
   <link rel="stylesheet" href="../css/new_entry.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.css" integrity="sha256-wT6CFc7EKRuf7uyVfi+MQNHUzojuHN2pSw0YWFt2K5E=" crossorigin="anonymous" />
@@ -89,8 +96,8 @@
   </ul>
   <br>
   <p style="font-size: 19px"> What times might work? </p>
-
-  <p> No earlier than: <select name="NoEarlierThan">
+  <form>
+  <p> No earlier than: <select name="NoEarlierThan" style="border-radius: 5px">
   <option value=0>Midnight</option>
   <option value=1>1 am</option>
   <option value=2>2 am</option>
@@ -117,7 +124,7 @@
   <option value=23>11 pm</option>
   <option value=0>Midnight</option></select></div></p>
 
-  <p> No later than: <select name="NoLaterThan">
+  <p> No later than: <select name="NoLaterThan" style="border-radius: 5px">
   <option value=0> Midnight</option>
   <option value=1>1 am</option>
   <option value=2>2 am</option>
@@ -144,13 +151,15 @@
   <option value=23>11 pm</option>
   <option value=0>Midnight</option>
 </select></div></p>
-  <p> Timezone: <select name="Timezones">
+  <p> Timezone: <select name="Timezones" style="border-radius: 5px">
     <option value=0>Eastern Time</option>
     <option selected value=1> Central Time</option>
     <option value=2> Mountain Time </option>
     <option value=3> Pacific Time </option>
   </select></p>
   <br>
+</form>
 <button class="btn">Create Event</button>
+<footer></footer>
 </body>
 </html>
