@@ -17,9 +17,15 @@
 </header>
 <body>
   <h1 style="color: #595959;"> Create a New Event </h1>
-  <form method: "link" action="/personal">
-  <input style='font-size:20px; text-align: center; border-radius: 5px; margin:5px;' type=text name="eventName" placeholder="New Event Name">
+  <form method: "get" action="/personal">
+  <input style='font-size:20px; text-align: center; border-radius: 5px; margin:5px;' type=text id="eventName" name="eventName" placeholder="New Event Name">
   </form>
+  <script type="text/javascript">
+    document.getElementById('eventName').onkeyup = function() {
+      var eventName = this.value;
+      sessionStorage.setItem('eventName', eventName);
+  };
+  </script>
   <br>
   <br>
   <p style="font-size: 19px; color: #595959;"> What dates might work? </p>
@@ -155,13 +161,7 @@
   </select></p>
   <form method: "link" action="/personal">
   <br>
-  <input class="btn" id="eventName" type="submit" value="Create Event">
-  <script>
-    document.getElementById('eventName').onkeyup = function() {
-      var eventName = this.value;
-      sessionStorage.setItem('eventName', eventName);
-  };
-  </script>
+  <input class="btn" type="submit" value="Create Event">
   <br>
   <br>
   <br>
