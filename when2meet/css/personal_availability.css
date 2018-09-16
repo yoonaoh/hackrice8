@@ -12,7 +12,44 @@ font-family: 'Karla', sans-serif;
 }
 
 h1 {
-  font-family: 'Source Serif Pro', serif;
-  color: black;
+  font-family: 'Karla', sans-serif;
+  color: #595959;
   text-align: center;
+}
+h2 {
+  font-size: 18px;
+  font-family: 'Karla', sans-serif;
+  color: #595959;
+  text-align: center;
+}
+
+h3 {
+  font-size: 17px;
+  font-family: 'Karla', sans-serif;
+  color: #595959;
+  text-align: center;
+}
+
+a.header:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a.header:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a.header:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a.header:active {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
 }
