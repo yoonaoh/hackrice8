@@ -47,5 +47,5 @@ app = webapp2.WSGIApplication([
     ('/', HomePage),
     ('/dashboard', Dashboard),
     ('/new_event', NewEvent),
-    ('availability', Availability)
+    ('/availability', Availability)
 ], debug=True)
