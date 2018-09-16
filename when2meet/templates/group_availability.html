@@ -14,6 +14,26 @@
   </div>
 </header>
 <body>
-  <h1> Group availability </h1>
+  <h1> New Event </h1>
+  <h3> Time Zone </h3>
+  <p style="font-size: 17px; color: #595959; text-align: center;"><select name="Timezones" style="border-radius: 5px">
+    <option value=0>Eastern Time</option>
+    <option selected value=1> Central Time</option>
+    <option value=2> Mountain Time </option>
+    <option value=3> Pacific Time </option>
+  </select></p>
+  <div id="space">
+  <span id="available"> 1/5 Available </span>
+  <span id="filter"> View by number of people:
+    <p style="font-size: 17px; color: #595959; text-align: center;"><select name="numpeople" style="border-radius: 5px">
+      <option value=0>1</option>
+      <option value=1>2</option>
+      <option value=2>3</option>
+      <option value=3>4</option>
+      <option value=3>5</option>
+    </select></p>
+  </span>
+  </div>
+  <a href = "/personal"> <button class="btn" style="justify-content: center;">Edit My Availability</button></a>
 </body>
 </html>
