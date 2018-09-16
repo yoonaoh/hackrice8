@@ -15,12 +15,13 @@
   </div>
 </header>
 <body>
-  <h1> Create a New Event </h1>
-  <input style='font-size:20px; text-align: center; border-radius: 5px; margin:10px;' type=text placeholder="New Event Name">
+  <h1 style="color: #595959;"> Create a New Event </h1>
+  <form action="personal_availability.html">
+  <input style='font-size:20px; text-align: center; border-radius: 5px; margin:5px;' type=text placeholder="New Event Name">
   <br>
   <br>
-  <p style="font-size: 19px"> What dates might work? </p>
-  <p> <i> Click and drag to choose days. </i> </p>
+  <p style="font-size: 19px; color: #595959;"> What dates might work? </p>
+  <p style="color: #595959;"> <i> Click and drag to choose days. </i> </p>
   <div class="month">
     <ul>
       <li class="prev">&#10094;</li>
@@ -33,13 +34,13 @@
   </div>
 
   <ul class="weekdays">
-    <li>Su</li>
-    <li>Mo</li>
-    <li>Tu</li>
-    <li>We</li>
-    <li>Th</li>
-    <li>Fr</li>
-    <li>Sa</li>
+    <li>Sun</li>
+    <li>Mon</li>
+    <li>Tues</li>
+    <li>Wed</li>
+    <li>Thurs</li>
+    <li>Fri</li>
+    <li>Sat</li>
   </ul>
 
   <ul class="days">
@@ -88,9 +89,8 @@
     <li> </li>
   </ul>
   <br>
-  <p style="font-size: 19px"> What times might work? </p>
-  <form>
-  <p> No earlier than: <select name="NoEarlierThan" style="border-radius: 5px">
+  <p style="font-size: 17px; color: #595959;"> What times might work? </p>
+  <p style="font-size: 17px; color: #595959;"> No earlier than: <select name="NoEarlierThan" style="border-radius: 5px">
   <option value=0>Midnight</option>
   <option value=1>1 am</option>
   <option value=2>2 am</option>
@@ -117,7 +117,7 @@
   <option value=23>11 pm</option>
   <option value=0>Midnight</option></select></div></p>
 
-  <p> No later than: <select name="NoLaterThan" style="border-radius: 5px">
+  <p style="font-size: 17px; color: #595959;"> No later than: <select name="NoLaterThan" style="border-radius: 5px">
   <option value=0> Midnight</option>
   <option value=1>1 am</option>
   <option value=2>2 am</option>
@@ -144,17 +144,21 @@
   <option value=23>11 pm</option>
   <option value=0>Midnight</option>
 </select></div></p>
-  <p> Timezone: <select name="Timezones" style="border-radius: 5px">
+  <p style="font-size: 17px; color: #595959;"> Timezone: <select name="Timezones" style="border-radius: 5px">
     <option value=0>Eastern Time</option>
     <option selected value=1> Central Time</option>
     <option value=2> Mountain Time </option>
     <option value=3> Pacific Time </option>
   </select></p>
   <br>
+  <input class="btn" type="submit" value="Create Event">
+  <br>
+  <br>
+  <br>
 </form>
-<button class="btn">Create Event</button>
+<!-- <button class="btn">Create Event</button>
 <br>
 <br>
-<br>
+<br> -->
 </body>
 </html>
