@@ -4,7 +4,7 @@
 }
 html, body, div {
   font-family: 'Karla', sans-serif;
-  font-size: 12pt;
+  font-size: 13pt;
   margin-top: 0;
   margin-left: 0;
   margin-right: 0;
@@ -25,7 +25,7 @@ html, body, div {
   width: 13.6%;
   text-align: center;
   }
-  
+
 .daybtn :active{
   padding: 5px;
   background: #1A936F;
