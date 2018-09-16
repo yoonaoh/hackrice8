@@ -20,7 +20,7 @@ import time
 from google.appengine.api import users
 from google.appengine.ext import ndb
 
-env = jinja2.Environment(loader=jinja2.FileSystemLoader('templates'));
+env = jinja2.Environment(loader=jinja2.FileSystemLoader('html'));
 
 class HomePage(webapp2.RequestHandler):
     def get(self):
