@@ -64,6 +64,7 @@ thead tr:last-child th {
 table {
   border-collapse: collapse;
   width: 60%;
+  border-spacing: 0;
   border: 2px solid #1A936F;
   border-radius: .25re
 }
