@@ -3,8 +3,6 @@
   justify-content: space-between;
 }
 
-
-
 html, body, div {
   font-family: 'Karla', sans-serif;
   font-size: 13pt;
@@ -145,11 +143,23 @@ body {font-family: 'Karla', sans-serif;}
 a:link {
     color: white;
     background-color: transparent;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a:hover {
-    color: black;
+    color: white;
+    background-color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:active {
+    color: white;
     background-color: transparent;
     text-decoration: underline;
 }
