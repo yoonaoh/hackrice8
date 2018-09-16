@@ -3,15 +3,46 @@
   justify-content: space-between;
 }
 html, body, div {
-  font-family: monospace;
+  font-family: 'Karla', sans-serif;
   font-size: 12pt;
   margin-top: 0;
   margin-left: 0;
   margin-right: 0;
 }
+
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  width: 210px;
+  height: 45px;
+  font-family: 'Karla', sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #98DB41;
+  border: none;
+  border-radius: 35px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease 0s;
+  cursor: pointer;
+  }
+
+.btn:hover {
+  background-color: #b6ff56;
+      box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-3px);
+}
+
 table {
   border-collapse: collapse;
   width: 95%;
+
 }
 td, th {
   border: 1px solid;
