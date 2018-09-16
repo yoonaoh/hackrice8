@@ -2,6 +2,13 @@
   display: flex;
   justify-content: space-between;
 }
+footer{
+  background:#1A936F;
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:20px;
+}
 body, html, div{
   font-family: 'Karla', sans-serif;
   font-size: 13pt;
