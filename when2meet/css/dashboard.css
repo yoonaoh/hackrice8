@@ -10,7 +10,6 @@ html, body, div {
   margin-right: 0;
 }
 
-
 .wrap {
   display: flex;
   align-items: center;
@@ -58,7 +57,7 @@ th {
 }
 
 thead tr:last-child th {
-  border-bottom: 3px solid #ddd;
+  border-bottom: 2px solid #1A936F;
 }
 
 table {
@@ -69,14 +68,44 @@ table {
   border-radius: .25re
 }
 td, th {
-  border: 1px solid;
+  color:  #4d4d4d;
+  border: 2px solid #1A936F;
   text-align: left;
   padding: 8px;
 }
+
+#table-title {
+  color: white;
+}
+
 tr: nth-child(even) {
-  bacground-color: lightgreen;
+  background-color: green;
 }
 tbody tr:hover {
   background-color: #f2f2f2;
   cursor: pointer;;
+}
+
+a.header:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a.header:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a.header:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a.header:active {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
 }
