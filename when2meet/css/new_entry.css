@@ -3,13 +3,29 @@
   justify-content: space-between;
 }
 html, body, div {
-  font-family: monospace;
+  font-family: 'Karla', sans-serif;
   font-size: 12pt;
   margin-top: 0;
   margin-left: 0;
   margin-right: 0;
   text-align: center;
 }
+.btn {
+  width: 210px;
+  height: 45px;
+  font-family: 'Karla', sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: white;
+  background-color: #1A936F;
+  border: none;
+  border-radius: 35px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease 0s;
+  cursor: pointer;
+  }
 * {box-sizing: border-box;}
 ul {list-style-type: none;}
 body {font-family: monospace, monospace;}
